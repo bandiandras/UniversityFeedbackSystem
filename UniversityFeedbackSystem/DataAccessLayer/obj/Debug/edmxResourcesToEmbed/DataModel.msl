@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ORdbModelStoreContainer" CdmEntityContainer="ORdbEntities">
+    <EntitySetMapping Name="diakoks">
+      <EntityTypeMapping TypeName="ORdbModel.diakok">
+        <MappingFragment StoreEntitySet="diakok">
+          <ScalarProperty Name="id_diakok" ColumnName="id_diakok" />
+          <ScalarProperty Name="azonosito" ColumnName="azonosito" />
+          <ScalarProperty Name="id_szakok" ColumnName="id_szakok" />
+          <ScalarProperty Name="evfolyam" ColumnName="evfolyam" />
+          <ScalarProperty Name="kitoltotte1" ColumnName="kitoltotte1" />
+          <ScalarProperty Name="kitoltotte2" ColumnName="kitoltotte2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="karoks">
+      <EntityTypeMapping TypeName="ORdbModel.karok">
+        <MappingFragment StoreEntitySet="karok">
+          <ScalarProperty Name="nev" ColumnName="nev" />
+          <ScalarProperty Name="id_karok" ColumnName="id_karok" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kerdes_valaszlehetoseg">
+      <EntityTypeMapping TypeName="ORdbModel.Kerdes_valaszlehetoseg">
+        <MappingFragment StoreEntitySet="Kerdes_valaszlehetoseg">
+          <ScalarProperty Name="id_Kerdes_valaszlehetoseg" ColumnName="id_Kerdes_valaszlehetoseg" />
+          <ScalarProperty Name="id_kerdes" ColumnName="id_kerdes" />
+          <ScalarProperty Name="valaszlehetoseg" ColumnName="valaszlehetoseg" />
+          <ScalarProperty Name="valaszlehetoseg_ertek" ColumnName="valaszlehetoseg_ertek" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kerdes_x">
+      <EntityTypeMapping TypeName="ORdbModel.kerdes_x">
+        <MappingFragment StoreEntitySet="kerdes_x">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_kerdes" ColumnName="id_kerdes" />
+          <ScalarProperty Name="id_x" ColumnName="id_x" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kerdeseks">
+      <EntityTypeMapping TypeName="ORdbModel.kerdesek">
+        <MappingFragment StoreEntitySet="kerdesek">
+          <ScalarProperty Name="id_kerdesek" ColumnName="id_kerdesek" />
+          <ScalarProperty Name="kerdes" ColumnName="kerdes" />
+          <ScalarProperty Name="tipus" ColumnName="tipus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kerdoiv_kerdes">
+      <EntityTypeMapping TypeName="ORdbModel.kerdoiv_kerdes">
+        <MappingFragment StoreEntitySet="kerdoiv_kerdes">
+          <ScalarProperty Name="id_kerdoiv_kerdes" ColumnName="id_kerdoiv_kerdes" />
+          <ScalarProperty Name="id_kerdoiv" ColumnName="id_kerdoiv" />
+          <ScalarProperty Name="id_kerdes" ColumnName="id_kerdes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kerdoiveks">
+      <EntityTypeMapping TypeName="ORdbModel.kerdoivek">
+        <MappingFragment StoreEntitySet="kerdoivek">
+          <ScalarProperty Name="id_kerdoivek" ColumnName="id_kerdoivek" />
+          <ScalarProperty Name="id_x" ColumnName="id_x" />
+          <ScalarProperty Name="felev" ColumnName="felev" />
+          <ScalarProperty Name="ev" ColumnName="ev" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="szakoks">
+      <EntityTypeMapping TypeName="ORdbModel.szakok">
+        <MappingFragment StoreEntitySet="szakok">
+          <ScalarProperty Name="id_szakok" ColumnName="id_szakok" />
+          <ScalarProperty Name="nev" ColumnName="nev" />
+          <ScalarProperty Name="idotartam" ColumnName="idotartam" />
+          <ScalarProperty Name="id_karok" ColumnName="id_karok" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tanaroks">
+      <EntityTypeMapping TypeName="ORdbModel.tanarok">
+        <MappingFragment StoreEntitySet="tanarok">
+          <ScalarProperty Name="nev" ColumnName="nev" />
+          <ScalarProperty Name="id_tanarok" ColumnName="id_tanarok" />
+          <ScalarProperty Name="tanarok_alias" ColumnName="tanarok_alias" />
+          <ScalarProperty Name="jelszo" ColumnName="jelszo" />
+          <ScalarProperty Name="funkcio" ColumnName="funkcio" />
+          <ScalarProperty Name="id_tanszekek" ColumnName="id_tanszekek" />
+          <ScalarProperty Name="felhasznalo_tipusa" ColumnName="felhasznalo_tipusa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tanszekeks">
+      <EntityTypeMapping TypeName="ORdbModel.tanszekek">
+        <MappingFragment StoreEntitySet="tanszekek">
+          <ScalarProperty Name="id_tanszekek" ColumnName="id_tanszekek" />
+          <ScalarProperty Name="nev" ColumnName="nev" />
+          <ScalarProperty Name="id_karok" ColumnName="id_karok" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tantargyaks">
+      <EntityTypeMapping TypeName="ORdbModel.tantargyak">
+        <MappingFragment StoreEntitySet="tantargyak">
+          <ScalarProperty Name="id_tantargyak" ColumnName="id_tantargyak" />
+          <ScalarProperty Name="nev" ColumnName="nev" />
+          <ScalarProperty Name="tipus" ColumnName="tipus" />
+          <ScalarProperty Name="id_szakok" ColumnName="id_szakok" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="valaszoks">
+      <EntityTypeMapping TypeName="ORdbModel.valaszok">
+        <MappingFragment StoreEntitySet="valaszok">
+          <ScalarProperty Name="id_valaszok" ColumnName="id_valaszok" />
+          <ScalarProperty Name="id_kerdoiv" ColumnName="id_kerdoiv" />
+          <ScalarProperty Name="id_kerdes" ColumnName="id_kerdes" />
+          <ScalarProperty Name="id_valasz" ColumnName="id_valasz" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="x">
+      <EntityTypeMapping TypeName="ORdbModel.x">
+        <MappingFragment StoreEntitySet="x">
+          <ScalarProperty Name="id_x" ColumnName="id_x" />
+          <ScalarProperty Name="id_tanarok" ColumnName="id_tanarok" />
+          <ScalarProperty Name="id_tantargyak" ColumnName="id_tantargyak" />
+          <ScalarProperty Name="id_szakok" ColumnName="id_szakok" />
+          <ScalarProperty Name="evfolyam" ColumnName="evfolyam" />
+          <ScalarProperty Name="felev" ColumnName="felev" />
+          <ScalarProperty Name="tantargy_tipus" ColumnName="tantargy_tipus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

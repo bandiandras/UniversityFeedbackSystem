@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{2E7A61EC-5A47-40A7-BECB-8B704FE7DB09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{EFDAEE45-2C22-4815-8B17-599D5FFB60E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DML", "DMLmethods\DML.csproj", "{72D19534-8A95-422C-B0A4-AFBF8BA291DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E7A61EC-5A47-40A7-BECB-8B704FE7DB09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E7A61EC-5A47-40A7-BECB-8B704FE7DB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E7A61EC-5A47-40A7-BECB-8B704FE7DB09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E7A61EC-5A47-40A7-BECB-8B704FE7DB09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFDAEE45-2C22-4815-8B17-599D5FFB60E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFDAEE45-2C22-4815-8B17-599D5FFB60E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFDAEE45-2C22-4815-8B17-599D5FFB60E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFDAEE45-2C22-4815-8B17-599D5FFB60E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72D19534-8A95-422C-B0A4-AFBF8BA291DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72D19534-8A95-422C-B0A4-AFBF8BA291DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72D19534-8A95-422C-B0A4-AFBF8BA291DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72D19534-8A95-422C-B0A4-AFBF8BA291DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

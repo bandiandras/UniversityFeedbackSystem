@@ -1,0 +1,28 @@
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\DMLmethods\obj\Debug\DML.csprojResolveAssemblyReference.cache
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\DMLmethods\bin\Debug\ORdb.mdf
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\DMLmethods\bin\Debug\ORdb_log.ldf
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\DMLmethods\bin\Debug\DMLmethods.dll.config
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\DMLmethods\bin\Debug\DMLmethods.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\DMLmethods\bin\Debug\DMLmethods.pdb
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\DMLmethods\bin\Debug\DataAccessLayer.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\DMLmethods\bin\Debug\EntityFramework.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\DMLmethods\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\DMLmethods\bin\Debug\DataAccessLayer.pdb
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\DMLmethods\bin\Debug\EntityFramework.xml
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\DMLmethods\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\DMLmethods\obj\Debug\DMLmethods.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\DMLmethods\obj\Debug\DMLmethods.pdb
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\ORdb.mdf
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\ORdb_log.ldf
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\DMLmethods.dll.config
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\DMLmethods.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\DMLmethods.pdb
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\DataAccessLayer.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\EntityFramework.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\EntityFramework.SqlServer.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\DataAccessLayer.pdb
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\EntityFramework.xml
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\EntityFramework.SqlServer.xml
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\obj\Debug\DML.csprojResolveAssemblyReference.cache
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\obj\Debug\DMLmethods.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\obj\Debug\DMLmethods.pdb

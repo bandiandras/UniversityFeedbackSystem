@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ORdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="diakok">
+    <Key>
+      <PropertyRef Name="id_diakok" />
+    </Key>
+    <Property Name="id_diakok" Type="int" Nullable="false" />
+    <Property Name="azonosito" Type="varchar" MaxLength="20" />
+    <Property Name="id_szakok" Type="int" />
+    <Property Name="evfolyam" Type="smallint" />
+    <Property Name="kitoltotte1" Type="smallint" />
+    <Property Name="kitoltotte2" Type="smallint" />
+  </EntityType>
+  <EntityType Name="karok">
+    <Key>
+      <PropertyRef Name="id_karok" />
+    </Key>
+    <Property Name="nev" Type="varchar" MaxLength="50" />
+    <Property Name="id_karok" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Kerdes_valaszlehetoseg">
+    <Key>
+      <PropertyRef Name="id_Kerdes_valaszlehetoseg" />
+    </Key>
+    <Property Name="id_Kerdes_valaszlehetoseg" Type="int" Nullable="false" />
+    <Property Name="id_kerdes" Type="int" />
+    <Property Name="valaszlehetoseg" Type="varchar" MaxLength="100" />
+    <Property Name="valaszlehetoseg_ertek" Type="int" />
+  </EntityType>
+  <EntityType Name="kerdes_x">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id_kerdes" Type="int" />
+    <Property Name="id_x" Type="int" />
+  </EntityType>
+  <EntityType Name="kerdesek">
+    <Key>
+      <PropertyRef Name="id_kerdesek" />
+    </Key>
+    <Property Name="id_kerdesek" Type="int" Nullable="false" />
+    <Property Name="kerdes" Type="varchar" MaxLength="200" />
+    <Property Name="tipus" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="kerdoiv_kerdes">
+    <Key>
+      <PropertyRef Name="id_kerdoiv_kerdes" />
+    </Key>
+    <Property Name="id_kerdoiv_kerdes" Type="int" Nullable="false" />
+    <Property Name="id_kerdoiv" Type="int" />
+    <Property Name="id_kerdes" Type="int" />
+  </EntityType>
+  <EntityType Name="kerdoivek">
+    <Key>
+      <PropertyRef Name="id_kerdoivek" />
+    </Key>
+    <Property Name="id_kerdoivek" Type="int" Nullable="false" />
+    <Property Name="id_x" Type="int" />
+    <Property Name="felev" Type="smallint" />
+    <Property Name="ev" Type="smallint" />
+  </EntityType>
+  <EntityType Name="szakok">
+    <Key>
+      <PropertyRef Name="id_szakok" />
+    </Key>
+    <Property Name="id_szakok" Type="int" Nullable="false" />
+    <Property Name="nev" Type="varchar" MaxLength="50" />
+    <Property Name="idotartam" Type="int" />
+    <Property Name="id_karok" Type="int" />
+  </EntityType>
+  <EntityType Name="tanarok">
+    <Key>
+      <PropertyRef Name="id_tanarok" />
+    </Key>
+    <Property Name="nev" Type="varchar" MaxLength="50" />
+    <Property Name="id_tanarok" Type="int" Nullable="false" />
+    <Property Name="tanarok_alias" Type="varchar" MaxLength="50" />
+    <Property Name="jelszo" Type="varchar" MaxLength="50" />
+    <Property Name="funkcio" Type="varchar" MaxLength="50" />
+    <Property Name="id_tanszekek" Type="int" />
+    <Property Name="felhasznalo_tipusa" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="tanszekek">
+    <Key>
+      <PropertyRef Name="id_tanszekek" />
+    </Key>
+    <Property Name="id_tanszekek" Type="int" Nullable="false" />
+    <Property Name="nev" Type="varchar" MaxLength="50" />
+    <Property Name="id_karok" Type="int" />
+  </EntityType>
+  <EntityType Name="tantargyak">
+    <Key>
+      <PropertyRef Name="id_tantargyak" />
+    </Key>
+    <Property Name="id_tantargyak" Type="int" Nullable="false" />
+    <Property Name="nev" Type="varchar" MaxLength="100" />
+    <Property Name="tipus" Type="varchar" MaxLength="20" />
+    <Property Name="id_szakok" Type="int" />
+  </EntityType>
+  <EntityType Name="valaszok">
+    <Key>
+      <PropertyRef Name="id_valaszok" />
+    </Key>
+    <Property Name="id_valaszok" Type="int" Nullable="false" />
+    <Property Name="id_kerdoiv" Type="int" />
+    <Property Name="id_kerdes" Type="int" />
+    <Property Name="id_valasz" Type="int" />
+  </EntityType>
+  <EntityType Name="x">
+    <Key>
+      <PropertyRef Name="id_x" />
+    </Key>
+    <Property Name="id_x" Type="int" Nullable="false" />
+    <Property Name="id_tanarok" Type="int" />
+    <Property Name="id_tantargyak" Type="int" />
+    <Property Name="id_szakok" Type="int" />
+    <Property Name="evfolyam" Type="smallint" />
+    <Property Name="felev" Type="smallint" />
+    <Property Name="tantargy_tipus" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="diakok_fk">
+    <End Role="szakok" Type="Self.szakok" Multiplicity="0..1" />
+    <End Role="diakok" Type="Self.diakok" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="szakok">
+        <PropertyRef Name="id_szakok" />
+      </Principal>
+      <Dependent Role="diakok">
+        <PropertyRef Name="id_szakok" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kerdes_x_fk">
+    <End Role="kerdesek" Type="Self.kerdesek" Multiplicity="0..1" />
+    <End Role="kerdes_x" Type="Self.kerdes_x" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kerdesek">
+        <PropertyRef Name="id_kerdesek" />
+      </Principal>
+      <Dependent Role="kerdes_x">
+        <PropertyRef Name="id_kerdes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kx_fk">
+    <End Role="x" Type="Self.x" Multiplicity="0..1" />
+    <End Role="kerdes_x" Type="Self.kerdes_x" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="x">
+        <PropertyRef Name="id_x" />
+      </Principal>
+      <Dependent Role="kerdes_x">
+        <PropertyRef Name="id_x" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="szakok_fk">
+    <End Role="karok" Type="Self.karok" Multiplicity="0..1" />
+    <End Role="szakok" Type="Self.szakok" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="karok">
+        <PropertyRef Name="id_karok" />
+      </Principal>
+      <Dependent Role="szakok">
+        <PropertyRef Name="id_karok" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tanarok_fk">
+    <End Role="tanszekek" Type="Self.tanszekek" Multiplicity="0..1" />
+    <End Role="tanarok" Type="Self.tanarok" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tanszekek">
+        <PropertyRef Name="id_tanszekek" />
+      </Principal>
+      <Dependent Role="tanarok">
+        <PropertyRef Name="id_tanszekek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tanszekek_fk">
+    <End Role="karok" Type="Self.karok" Multiplicity="0..1" />
+    <End Role="tanszekek" Type="Self.tanszekek" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="karok">
+        <PropertyRef Name="id_karok" />
+      </Principal>
+      <Dependent Role="tanszekek">
+        <PropertyRef Name="id_karok" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tantargyak_fk">
+    <End Role="szakok" Type="Self.szakok" Multiplicity="0..1" />
+    <End Role="tantargyak" Type="Self.tantargyak" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="szakok">
+        <PropertyRef Name="id_szakok" />
+      </Principal>
+      <Dependent Role="tantargyak">
+        <PropertyRef Name="id_szakok" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="valasz_fk2">
+    <End Role="kerdoivek" Type="Self.kerdoivek" Multiplicity="0..1" />
+    <End Role="valaszok" Type="Self.valaszok" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kerdoivek">
+        <PropertyRef Name="id_kerdoivek" />
+      </Principal>
+      <Dependent Role="valaszok">
+        <PropertyRef Name="id_kerdoiv" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="valasz_fk3">
+    <End Role="kerdesek" Type="Self.kerdesek" Multiplicity="0..1" />
+    <End Role="valaszok" Type="Self.valaszok" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kerdesek">
+        <PropertyRef Name="id_kerdesek" />
+      </Principal>
+      <Dependent Role="valaszok">
+        <PropertyRef Name="id_kerdes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="valasz_fk4">
+    <End Role="Kerdes_valaszlehetoseg" Type="Self.Kerdes_valaszlehetoseg" Multiplicity="0..1" />
+    <End Role="valaszok" Type="Self.valaszok" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kerdes_valaszlehetoseg">
+        <PropertyRef Name="id_Kerdes_valaszlehetoseg" />
+      </Principal>
+      <Dependent Role="valaszok">
+        <PropertyRef Name="id_valasz" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="x_fk1">
+    <End Role="tanarok" Type="Self.tanarok" Multiplicity="0..1" />
+    <End Role="x" Type="Self.x" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tanarok">
+        <PropertyRef Name="id_tanarok" />
+      </Principal>
+      <Dependent Role="x">
+        <PropertyRef Name="id_tanarok" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="x_fk2">
+    <End Role="tantargyak" Type="Self.tantargyak" Multiplicity="0..1" />
+    <End Role="x" Type="Self.x" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tantargyak">
+        <PropertyRef Name="id_tantargyak" />
+      </Principal>
+      <Dependent Role="x">
+        <PropertyRef Name="id_tantargyak" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="x_fk3">
+    <End Role="szakok" Type="Self.szakok" Multiplicity="0..1" />
+    <End Role="x" Type="Self.x" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="szakok">
+        <PropertyRef Name="id_szakok" />
+      </Principal>
+      <Dependent Role="x">
+        <PropertyRef Name="id_szakok" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="xy_fk1">
+    <End Role="kerdesek" Type="Self.kerdesek" Multiplicity="0..1" />
+    <End Role="Kerdes_valaszlehetoseg" Type="Self.Kerdes_valaszlehetoseg" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kerdesek">
+        <PropertyRef Name="id_kerdesek" />
+      </Principal>
+      <Dependent Role="Kerdes_valaszlehetoseg">
+        <PropertyRef Name="id_kerdes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="xy_fk3">
+    <End Role="kerdoivek" Type="Self.kerdoivek" Multiplicity="0..1" />
+    <End Role="kerdoiv_kerdes" Type="Self.kerdoiv_kerdes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kerdoivek">
+        <PropertyRef Name="id_kerdoivek" />
+      </Principal>
+      <Dependent Role="kerdoiv_kerdes">
+        <PropertyRef Name="id_kerdoiv" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="xy_fk4">
+    <End Role="kerdesek" Type="Self.kerdesek" Multiplicity="0..1" />
+    <End Role="kerdoiv_kerdes" Type="Self.kerdoiv_kerdes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kerdesek">
+        <PropertyRef Name="id_kerdesek" />
+      </Principal>
+      <Dependent Role="kerdoiv_kerdes">
+        <PropertyRef Name="id_kerdes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ORdbModelStoreContainer">
+    <EntitySet Name="diakok" EntityType="Self.diakok" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="karok" EntityType="Self.karok" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kerdes_valaszlehetoseg" EntityType="Self.Kerdes_valaszlehetoseg" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kerdes_x" EntityType="Self.kerdes_x" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kerdesek" EntityType="Self.kerdesek" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kerdoiv_kerdes" EntityType="Self.kerdoiv_kerdes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kerdoivek" EntityType="Self.kerdoivek" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="szakok" EntityType="Self.szakok" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tanarok" EntityType="Self.tanarok" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tanszekek" EntityType="Self.tanszekek" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tantargyak" EntityType="Self.tantargyak" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="valaszok" EntityType="Self.valaszok" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="x" EntityType="Self.x" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="diakok_fk" Association="Self.diakok_fk">
+      <End Role="szakok" EntitySet="szakok" />
+      <End Role="diakok" EntitySet="diakok" />
+    </AssociationSet>
+    <AssociationSet Name="kerdes_x_fk" Association="Self.kerdes_x_fk">
+      <End Role="kerdesek" EntitySet="kerdesek" />
+      <End Role="kerdes_x" EntitySet="kerdes_x" />
+    </AssociationSet>
+    <AssociationSet Name="kx_fk" Association="Self.kx_fk">
+      <End Role="x" EntitySet="x" />
+      <End Role="kerdes_x" EntitySet="kerdes_x" />
+    </AssociationSet>
+    <AssociationSet Name="szakok_fk" Association="Self.szakok_fk">
+      <End Role="karok" EntitySet="karok" />
+      <End Role="szakok" EntitySet="szakok" />
+    </AssociationSet>
+    <AssociationSet Name="tanarok_fk" Association="Self.tanarok_fk">
+      <End Role="tanszekek" EntitySet="tanszekek" />
+      <End Role="tanarok" EntitySet="tanarok" />
+    </AssociationSet>
+    <AssociationSet Name="tanszekek_fk" Association="Self.tanszekek_fk">
+      <End Role="karok" EntitySet="karok" />
+      <End Role="tanszekek" EntitySet="tanszekek" />
+    </AssociationSet>
+    <AssociationSet Name="tantargyak_fk" Association="Self.tantargyak_fk">
+      <End Role="szakok" EntitySet="szakok" />
+      <End Role="tantargyak" EntitySet="tantargyak" />
+    </AssociationSet>
+    <AssociationSet Name="valasz_fk2" Association="Self.valasz_fk2">
+      <End Role="kerdoivek" EntitySet="kerdoivek" />
+      <End Role="valaszok" EntitySet="valaszok" />
+    </AssociationSet>
+    <AssociationSet Name="valasz_fk3" Association="Self.valasz_fk3">
+      <End Role="kerdesek" EntitySet="kerdesek" />
+      <End Role="valaszok" EntitySet="valaszok" />
+    </AssociationSet>
+    <AssociationSet Name="valasz_fk4" Association="Self.valasz_fk4">
+      <End Role="Kerdes_valaszlehetoseg" EntitySet="Kerdes_valaszlehetoseg" />
+      <End Role="valaszok" EntitySet="valaszok" />
+    </AssociationSet>
+    <AssociationSet Name="x_fk1" Association="Self.x_fk1">
+      <End Role="tanarok" EntitySet="tanarok" />
+      <End Role="x" EntitySet="x" />
+    </AssociationSet>
+    <AssociationSet Name="x_fk2" Association="Self.x_fk2">
+      <End Role="tantargyak" EntitySet="tantargyak" />
+      <End Role="x" EntitySet="x" />
+    </AssociationSet>
+    <AssociationSet Name="x_fk3" Association="Self.x_fk3">
+      <End Role="szakok" EntitySet="szakok" />
+      <End Role="x" EntitySet="x" />
+    </AssociationSet>
+    <AssociationSet Name="xy_fk1" Association="Self.xy_fk1">
+      <End Role="kerdesek" EntitySet="kerdesek" />
+      <End Role="Kerdes_valaszlehetoseg" EntitySet="Kerdes_valaszlehetoseg" />
+    </AssociationSet>
+    <AssociationSet Name="xy_fk3" Association="Self.xy_fk3">
+      <End Role="kerdoivek" EntitySet="kerdoivek" />
+      <End Role="kerdoiv_kerdes" EntitySet="kerdoiv_kerdes" />
+    </AssociationSet>
+    <AssociationSet Name="xy_fk4" Association="Self.xy_fk4">
+      <End Role="kerdesek" EntitySet="kerdesek" />
+      <End Role="kerdoiv_kerdes" EntitySet="kerdoiv_kerdes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

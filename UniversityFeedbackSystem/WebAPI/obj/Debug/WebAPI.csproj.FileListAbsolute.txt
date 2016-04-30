@@ -1,0 +1,66 @@
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\obj\Debug\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\obj\Debug\WebAPI.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\obj\Debug\WebAPI.pdb
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\ORdb.mdf
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\ORdb_log.ldf
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\WebAPI.dll.config
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\WebAPI.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\WebAPI.pdb
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\DataAccessLayer.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\DMLmethods.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\Newtonsoft.Json.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\System.Web.Helpers.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\System.Web.Mvc.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\System.Web.Razor.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\EntityFramework.dll
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\DataAccessLayer.pdb
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\DMLmethods.pdb
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\Newtonsoft.Json.xml
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\System.Web.Helpers.xml
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\System.Web.Mvc.xml
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\System.Web.Razor.xml
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.xml
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Bandi\Desktop\UniversityFeedbackSystem-master\UniversityFeedbackSystem\WebAPI\bin\EntityFramework.xml
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\obj\Debug\WebAPI.csprojResolveAssemblyReference.cache
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\ORdb.mdf
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\ORdb_log.ldf
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\WebAPI.dll.config
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\WebAPI.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\WebAPI.pdb
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\DataAccessLayer.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\DMLmethods.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\Newtonsoft.Json.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Helpers.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Mvc.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Razor.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.Deployment.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.Razor.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\EntityFramework.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\DataAccessLayer.pdb
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\DMLmethods.pdb
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\Newtonsoft.Json.xml
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Helpers.xml
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Mvc.xml
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Razor.xml
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.xml
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.Deployment.xml
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.Razor.xml
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\EntityFramework.xml
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\obj\Debug\WebAPI.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\obj\Debug\WebAPI.pdb
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Net.Http.Formatting.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Http.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Http.WebHost.dll
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Net.Http.Formatting.xml
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Http.xml
+D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Http.WebHost.xml
