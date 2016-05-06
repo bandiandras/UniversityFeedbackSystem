@@ -20,11 +20,11 @@ namespace DMLmethods.DiakDML
         /// <param name="felev"></param>
         /// <param name="idSzak"></param>
         /// <returns></returns>
-        public List<KerdoivLista> GetKerdoiv(int ev, int felev, int idSzak)
+        public List<KerdoivListaElem> GetKerdoiv(int ev, int felev, int idSzak)
         {
             using (var dbcontext = new ORdbEntities())
             {
-                var kerdoiv = new List<KerdoivLista>();
+                var kerdoiv = new List<KerdoivListaElem>();
                 try
                 {
                     //megkeressuk a megfelelo kerdoivet
@@ -37,7 +37,7 @@ namespace DMLmethods.DiakDML
                     foreach (var k in kerdoivKerdesek)
                     {
                         //uj listaelem
-                        KerdoivLista kl = new KerdoivLista();
+                        KerdoivListaElem kl = new KerdoivListaElem();
                         //megkeresem a kerdes szoveget
                         var lKerdes = dbcontext.kerdeseks.SingleOrDefault(x => x.id_kerdesek == k.id_kerdes);
                         kl.question = lKerdes.kerdes;
@@ -86,12 +86,21 @@ namespace DMLmethods.DiakDML
                     }
 
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     
                     //throw;
                 }             
                 return kerdoiv;
+            }
+        }
+
+        public void SaveResults(List<ValaszListaElem> valaszok)
+        {
+            foreach(var elem in valaszok)
+            {
+                //elmentem a kerdest
+
             }
         }
     }

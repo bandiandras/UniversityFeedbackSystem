@@ -85,8 +85,10 @@
     <Compile Include="diakok.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Helper_objects\KerdoivLista.cs" />
+    <Compile Include="Helper_objects\KerdoivListaElem.cs" />
     <Compile Include="Helper_objects\Options.cs" />
+    <Compile Include="Helper_objects\OptionsValasz.cs" />
+    <Compile Include="Helper_objects\ValaszListaElem.cs" />
     <Compile Include="Kar.cs" />
     <Compile Include="karok.cs">
       <DependentUpon>DataModel.tt</DependentUpon>

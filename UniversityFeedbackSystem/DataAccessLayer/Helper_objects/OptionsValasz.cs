@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Helper_objects
 {
-    public class KerdoivLista
+    public class OptionsValasz : Options
     {
-        public string question;
-        public List<Options> options;
-        public List<string> answers;
+        public string answer;
     }
 }

@@ -13,7 +13,7 @@ namespace WebAPI.Controllers
     {
         [Route("api/Kerdoiv/GetKerdoiv/?paramArray=")]
         [HttpGet]
-        public List<KerdoivLista> GetKerdoiv([FromUri] string paramArray)
+        public List<KerdoivListaElem> GetKerdoiv([FromUri] string paramArray)
         {
             var lParams = paramArray.Split(',');
             var ev = Int32.Parse(lParams[0]);
