@@ -21,3 +21,15 @@ D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedback
 D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
 D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\ORdb.mdf
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\ORdb_log.ldf
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

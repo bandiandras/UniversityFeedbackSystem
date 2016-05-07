@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DataAccessLayer;
 using DataAccessLayer.Helper_objects;
+using DataAccessLayer.Model;
 
 namespace DMLmethods.DiakDML
 {
@@ -95,12 +96,50 @@ namespace DMLmethods.DiakDML
             }
         }
 
-        public void SaveResults(List<ValaszListaElem> valaszok)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="valaszok"></param>
+        /// <param name="kerdoivId"></param>
+        public void SaveResults(List<ValaszListaElem> avalaszok, int kerdoivId)
         {
-            foreach(var elem in valaszok)
+            using (var dbcontext = new ORdbEntities())
             {
-                //elmentem a kerdest
+                foreach(var elem in avalaszok)
+                {
 
+                    //megkeresem az adott kerdes id-jat
+                    Kerdes aktualisKerdes = (Kerdes)dbcontext.kerdeseks.FirstOrDefault(x => x.kerdes == elem.question);
+                    
+                    //megkeresek a valaszok tablabol az id-t
+                    //azert try catch, mert ha ures a tabla a max fuggveny exceptiont dob
+                    int valaszId;
+                    try
+                    {
+                        valaszId = dbcontext.valaszoks.Max(x => x.id_valaszok);
+                    }
+                    catch(Exception ex)
+                    {
+                        valaszId = 1;
+                    }
+                    
+                    foreach(var option in elem.options)
+                    {
+                        //megkeresem a kerdes_valaszlehetoseg tablabol a a kerdeshez tartozo bejegyzest
+                        var id_kerdes_valaszlehetoseg = dbcontext.Kerdes_valaszlehetoseg.FirstOrDefault(x => x.id_kerdes == aktualisKerdes.id_kerdesek && x.valaszlehetoseg == option.answer).id_Kerdes_valaszlehetoseg;
+                        
+                        Valasz vlsz = new Valasz(valaszId, kerdoivId, aktualisKerdes.id_kerdesek, id_kerdes_valaszlehetoseg);
+                        //uj sort szurok be a valaszok tablaba
+                        dbcontext.valaszoks.Add(vlsz);
+
+                    }
+
+
+
+
+                    //Lementjuk avaltozasokat
+                    dbcontext.SaveChanges();
+                }
             }
         }
     }

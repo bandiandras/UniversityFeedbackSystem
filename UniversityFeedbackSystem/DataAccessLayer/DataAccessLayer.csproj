@@ -81,7 +81,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Diak.cs" />
+    <Compile Include="Model\Diak.cs" />
     <Compile Include="diakok.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
@@ -89,11 +89,11 @@
     <Compile Include="Helper_objects\Options.cs" />
     <Compile Include="Helper_objects\OptionsValasz.cs" />
     <Compile Include="Helper_objects\ValaszListaElem.cs" />
-    <Compile Include="Kar.cs" />
+    <Compile Include="Model\Kar.cs" />
     <Compile Include="karok.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Kerdes.cs" />
+    <Compile Include="Model\Kerdes.cs" />
     <Compile Include="kerdesek.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
@@ -103,27 +103,28 @@
     <Compile Include="kerdes_x.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Kerdoiv.cs" />
+    <Compile Include="Model\Kerdoiv.cs" />
     <Compile Include="kerdoivek.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="kerdoiv_kerdes.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\Valasz.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Szak.cs" />
+    <Compile Include="Model\Szak.cs" />
     <Compile Include="szakok.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Tanar.cs" />
+    <Compile Include="Model\Tanar.cs" />
     <Compile Include="tanarok.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Tanszek.cs" />
+    <Compile Include="Model\Tanszek.cs" />
     <Compile Include="tanszekek.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Tantargy.cs" />
+    <Compile Include="Model\Tantargy.cs" />
     <Compile Include="tantargyak.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
@@ -133,7 +134,7 @@
     <Compile Include="x.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="x_Kapcsolat.cs" />
+    <Compile Include="Model\x_Kapcsolat.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
