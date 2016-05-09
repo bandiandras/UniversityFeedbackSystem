@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Helper_objects
 {
-    public class OptionsValasz : Options
+    public class OptionsValasz
     {
+        public string teacher;
+        public string subject;
         public string answer;
     }
 }

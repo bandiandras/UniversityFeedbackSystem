@@ -18,8 +18,8 @@ namespace DMLmethods.DiakDML
         {
             using(var dbcontext = new ORdbEntities())
             {
-                Diak diak = (Diak)dbcontext.diakoks.SingleOrDefault(x => x.azonosito == id);
-                if (diak != null && (diak.kitoltotte1 == 1))
+                diakok diak = dbcontext.diakoks.SingleOrDefault(x => x.azonosito == id);
+                if (diak != null && (diak.kitoltotte1 != 1))
                 {     
                     return true;
                 }

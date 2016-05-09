@@ -9,6 +9,12 @@ namespace DataAccessLayer.Helper_objects
     public class ValaszListaElem
     {
         public string question;
-        public List<OptionsValasz> options;
+        public List<OptionsValasz> options = new List<OptionsValasz>();
+    }
+
+    public class ValaszLista
+    {
+        public string neptunId;
+        public List<ValaszListaElem> valaszok = new List<ValaszListaElem>();
     }
 }

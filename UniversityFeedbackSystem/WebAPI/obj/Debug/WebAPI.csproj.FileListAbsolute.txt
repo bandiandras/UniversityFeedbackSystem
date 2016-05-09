@@ -64,5 +64,39 @@ D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedback
 D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Net.Http.Formatting.xml
 D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Http.xml
 D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\ORdb.mdf
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\ORdb_log.ldf
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\WebAPI.dll.config
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\WebAPI.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\WebAPI.pdb
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\DataAccessLayer.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\DMLmethods.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\Newtonsoft.Json.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Helpers.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Http.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Mvc.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Razor.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\EntityFramework.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\DataAccessLayer.pdb
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\DMLmethods.pdb
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\Newtonsoft.Json.xml
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Http.xml
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Helpers.xml
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Mvc.xml
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Razor.xml
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.xml
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\EntityFramework.xml
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\obj\Debug\WebAPI.csprojResolveAssemblyReference.cache
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\obj\Debug\WebAPI.dll
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\obj\Debug\WebAPI.pdb

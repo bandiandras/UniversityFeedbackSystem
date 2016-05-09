@@ -20,7 +20,6 @@ namespace WebAPI.Controllers
            }
            else
            {
-                //TESZT H MEGY E A GITHUBOS SZAR!!
                return 0;
            }
        }
