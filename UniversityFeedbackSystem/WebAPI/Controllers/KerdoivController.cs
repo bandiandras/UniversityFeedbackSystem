@@ -22,10 +22,10 @@ namespace WebAPI.Controllers
             
             var ev = Int32.Parse(lParams[0]);
             var felev = Int32.Parse(lParams[1]);
-            var idSzak = Int32.Parse(lParams[2]);
+            var neptunId = lParams[2];
             var kerdoivDML = new KerdoivDML();
 
-            var kerdoiv = kerdoivDML.GetKerdoiv(ev, felev, idSzak);
+            var kerdoiv = kerdoivDML.GetKerdoiv(ev, felev, neptunId);
             return kerdoiv;
         }
 

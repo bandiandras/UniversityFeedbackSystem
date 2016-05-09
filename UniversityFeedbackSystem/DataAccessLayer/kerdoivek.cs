@@ -21,9 +21,9 @@ namespace DataAccessLayer
         }
     
         public int id_kerdoivek { get; set; }
-        public Nullable<int> id_x { get; set; }
         public Nullable<short> felev { get; set; }
         public Nullable<short> ev { get; set; }
+        public Nullable<int> szak { get; set; }
     
         public virtual ICollection<kerdoiv_kerdes> kerdoiv_kerdes { get; set; }
         public virtual ICollection<valaszok> valaszoks { get; set; }

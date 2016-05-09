@@ -69,11 +69,11 @@
       <PropertyRef Name="id_kerdoivek" />
     </Key>
     <Property Name="id_kerdoivek" Type="Int32" Nullable="false" />
-    <Property Name="id_x" Type="Int32" />
     <Property Name="felev" Type="Int16" />
     <Property Name="ev" Type="Int16" />
     <NavigationProperty Name="kerdoiv_kerdes" Relationship="Self.xy_fk3" FromRole="kerdoivek" ToRole="kerdoiv_kerdes" />
     <NavigationProperty Name="valaszoks" Relationship="Self.valasz_fk2" FromRole="kerdoivek" ToRole="valaszok" />
+    <Property Name="szak" Type="Int32" />
   </EntityType>
   <EntityType Name="szakok">
     <Key>

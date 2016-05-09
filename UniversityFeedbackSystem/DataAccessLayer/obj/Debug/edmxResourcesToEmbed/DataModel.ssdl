@@ -56,9 +56,9 @@
       <PropertyRef Name="id_kerdoivek" />
     </Key>
     <Property Name="id_kerdoivek" Type="int" Nullable="false" />
-    <Property Name="id_x" Type="int" />
     <Property Name="felev" Type="smallint" />
     <Property Name="ev" Type="smallint" />
+    <Property Name="szak" Type="int" />
   </EntityType>
   <EntityType Name="szakok">
     <Key>

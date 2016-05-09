@@ -21,19 +21,19 @@ namespace DMLmethods.DiakDML
         /// <param name="felev"></param>
         /// <param name="idSzak"></param>
         /// <returns></returns>
-        public List<KerdoivListaElem> GetKerdoiv(int ev, int felev, int idSzak)
+        public List<KerdoivListaElem> GetKerdoiv(int ev, int felev, string neptunId)
         {
+            //id szak helyett neptunid, az alapjan kusitnu a szukseges dolgokat
             using (var dbcontext = new ORdbEntities())
             {
                 var kerdoiv = new List<KerdoivListaElem>();
                 try
                 {
                     //megkeressuk a megfelelo kerdoivet
-                    var lKerdoiv = dbcontext.kerdoiveks.SingleOrDefault(x => x.ev == ev && x.felev == felev);
+                    //id_x et valahogy belefonglalni, maskepp nem lesz jo
+                    var lKerdoiv = dbcontext.kerdoiveks.FirstOrDefault(x => x.ev == ev && x.felev == felev);
                     //a kerdoivhez tartozo kerdesek
-                    var kerdoivKerdesek = dbcontext.kerdoiv_kerdes
-                                          .Where(x => x.id_kerdes == lKerdoiv.id_kerdoivek)
-                                          .Select(x => new { x.id_kerdes, x.id_kerdoiv, x.id_kerdoiv_kerdes });
+                    var kerdoivKerdesek = lKerdoiv.kerdoiv_kerdes;
                     //minden kerdeshez megkeressuk a kerdes szoveget es a valaszokat
                     foreach (var k in kerdoivKerdesek)
                     {

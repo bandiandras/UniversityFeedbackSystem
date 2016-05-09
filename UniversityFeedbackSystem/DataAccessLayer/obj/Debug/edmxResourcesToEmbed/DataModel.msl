@@ -61,8 +61,8 @@
     <EntitySetMapping Name="kerdoiveks">
       <EntityTypeMapping TypeName="ORdbModel.kerdoivek">
         <MappingFragment StoreEntitySet="kerdoivek">
+          <ScalarProperty Name="szak" ColumnName="szak" />
           <ScalarProperty Name="id_kerdoivek" ColumnName="id_kerdoivek" />
-          <ScalarProperty Name="id_x" ColumnName="id_x" />
           <ScalarProperty Name="felev" ColumnName="felev" />
           <ScalarProperty Name="ev" ColumnName="ev" />
         </MappingFragment>

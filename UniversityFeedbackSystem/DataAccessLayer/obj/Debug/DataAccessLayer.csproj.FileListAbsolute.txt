@@ -32,4 +32,3 @@ C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSyste
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
-C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache

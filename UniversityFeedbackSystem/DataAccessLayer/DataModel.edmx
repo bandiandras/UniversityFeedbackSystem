@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="ORdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="ORdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="diakok">
           <Key>
             <PropertyRef Name="id_diakok" />
@@ -61,9 +61,9 @@
             <PropertyRef Name="id_kerdoivek" />
           </Key>
           <Property Name="id_kerdoivek" Type="int" Nullable="false" />
-          <Property Name="id_x" Type="int" />
           <Property Name="felev" Type="smallint" />
           <Property Name="ev" Type="smallint" />
+          <Property Name="szak" Type="int" />
         </EntityType>
         <EntityType Name="szakok">
           <Key>
@@ -395,8 +395,7 @@
             <End Role="kerdoiv_kerdes" EntitySet="kerdoiv_kerdes" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ORdbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -469,11 +468,11 @@
             <PropertyRef Name="id_kerdoivek" />
           </Key>
           <Property Name="id_kerdoivek" Type="Int32" Nullable="false" />
-          <Property Name="id_x" Type="Int32" />
           <Property Name="felev" Type="Int16" />
           <Property Name="ev" Type="Int16" />
           <NavigationProperty Name="kerdoiv_kerdes" Relationship="Self.xy_fk3" FromRole="kerdoivek" ToRole="kerdoiv_kerdes" />
           <NavigationProperty Name="valaszoks" Relationship="Self.valasz_fk2" FromRole="kerdoivek" ToRole="valaszok" />
+          <Property Name="szak" Type="Int32" />
         </EntityType>
         <EntityType Name="szakok">
           <Key>
@@ -888,8 +887,8 @@
           <EntitySetMapping Name="kerdoiveks">
             <EntityTypeMapping TypeName="ORdbModel.kerdoivek">
               <MappingFragment StoreEntitySet="kerdoivek">
+                <ScalarProperty Name="szak" ColumnName="szak" />
                 <ScalarProperty Name="id_kerdoivek" ColumnName="id_kerdoivek" />
-                <ScalarProperty Name="id_x" ColumnName="id_x" />
                 <ScalarProperty Name="felev" ColumnName="felev" />
                 <ScalarProperty Name="ev" ColumnName="ev" />
               </MappingFragment>

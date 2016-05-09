@@ -10,7 +10,7 @@
         <EntityTypeShape EntityType="ORdbModel.Kerdes_valaszlehetoseg" Width="1.5" PointX="9.75" PointY="3.625" IsExpanded="true" />
         <EntityTypeShape EntityType="ORdbModel.kerdes_x" Width="1.5" PointX="10.375" PointY="7.625" IsExpanded="true" />
         <EntityTypeShape EntityType="ORdbModel.kerdesek" Width="1.5" PointX="7.5" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="ORdbModel.kerdoiv_kerdes" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ORdbModel.kerdoiv_kerdes" Width="1.5" PointX="10" PointY="0.625" IsExpanded="true" />
         <EntityTypeShape EntityType="ORdbModel.kerdoivek" Width="1.5" PointX="7.5" PointY="11.125" IsExpanded="true" />
         <EntityTypeShape EntityType="ORdbModel.szakok" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
         <EntityTypeShape EntityType="ORdbModel.tanarok" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
