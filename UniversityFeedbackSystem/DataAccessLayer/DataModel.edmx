@@ -64,6 +64,7 @@
           <Property Name="felev" Type="smallint" />
           <Property Name="ev" Type="smallint" />
           <Property Name="szak" Type="int" />
+          <Property Name="evfolyam" Type="int" />
         </EntityType>
         <EntityType Name="szakok">
           <Key>
@@ -473,6 +474,7 @@
           <NavigationProperty Name="kerdoiv_kerdes" Relationship="Self.xy_fk3" FromRole="kerdoivek" ToRole="kerdoiv_kerdes" />
           <NavigationProperty Name="valaszoks" Relationship="Self.valasz_fk2" FromRole="kerdoivek" ToRole="valaszok" />
           <Property Name="szak" Type="Int32" />
+          <Property Name="evfolyam" Type="Int32" />
         </EntityType>
         <EntityType Name="szakok">
           <Key>
@@ -887,6 +889,7 @@
           <EntitySetMapping Name="kerdoiveks">
             <EntityTypeMapping TypeName="ORdbModel.kerdoivek">
               <MappingFragment StoreEntitySet="kerdoivek">
+                <ScalarProperty Name="evfolyam" ColumnName="evfolyam" />
                 <ScalarProperty Name="szak" ColumnName="szak" />
                 <ScalarProperty Name="id_kerdoivek" ColumnName="id_kerdoivek" />
                 <ScalarProperty Name="felev" ColumnName="felev" />

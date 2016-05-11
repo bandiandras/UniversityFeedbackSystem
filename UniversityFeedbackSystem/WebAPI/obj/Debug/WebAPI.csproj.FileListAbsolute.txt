@@ -64,6 +64,7 @@ D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedback
 D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Net.Http.Formatting.xml
 D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Http.xml
 D:\Adatok\Egyetem\III ev\III ev - II felev\Osztott rendszerek\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\obj\Debug\WebAPI.csprojResolveAssemblyReference.cache
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\ORdb.mdf
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\ORdb_log.ldf
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\WebAPI.dll.config
@@ -97,6 +98,5 @@ C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSyste
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\System.Web.WebPages.Razor.xml
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\bin\EntityFramework.xml
-C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\obj\Debug\WebAPI.csprojResolveAssemblyReference.cache
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\obj\Debug\WebAPI.dll
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\WebAPI\obj\Debug\WebAPI.pdb

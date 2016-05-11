@@ -21,7 +21,7 @@ namespace DMLmethods.DiakDML
         /// <param name="felev"></param>
         /// <param name="idSzak"></param>
         /// <returns></returns>
-        public List<KerdoivListaElem> GetKerdoiv(int ev, int felev, string neptunId)
+        public List<KerdoivListaElem> GetKerdoiv(string neptunId, int felev)
         {
             //id szak helyett neptunid, az alapjan kusitnu a szukseges dolgokat
             using (var dbcontext = new ORdbEntities())
@@ -29,9 +29,12 @@ namespace DMLmethods.DiakDML
                 var kerdoiv = new List<KerdoivListaElem>();
                 try
                 {
-                    //megkeressuk a megfelelo kerdoivet
-                    //id_x et valahogy belefonglalni, maskepp nem lesz jo
-                    var lKerdoiv = dbcontext.kerdoiveks.FirstOrDefault(x => x.ev == ev && x.felev == felev);
+                    //a diak adatai
+                    var diak = dbcontext.diakoks.FirstOrDefault(x => x.azonosito == neptunId);
+
+                     //megkeressuk a megfelelo kerdoivet
+                    var lKerdoiv = dbcontext.kerdoiveks
+                                    .FirstOrDefault(x => x.felev == felev && x.szak == diak.id_szakok && x.evfolyam == diak.evfolyam);
                     //a kerdoivhez tartozo kerdesek
                     var kerdoivKerdesek = lKerdoiv.kerdoiv_kerdes;
                     //minden kerdeshez megkeressuk a kerdes szoveget es a valaszokat
@@ -45,13 +48,8 @@ namespace DMLmethods.DiakDML
 
                         var lOption = new Options();
 
-                        //a kerdeshez tartozo x idket le kell kerjem
-                        var lX = dbcontext.kerdes_x
-                                    .Where(x => x.id_kerdes == k.id_kerdes)
-                                    .Select(x => new { x.id_x });
-
                         //minden x_id eseten feltoltjuk az Options tipusu listat
-                        foreach (var kapcs in lX)
+                        foreach (var kapcs in lKerdes.kerdes_x)
                         {
                             var lTanarNev = dbcontext.x
                                                 .Where(x => x.id_x == kapcs.id_x)
@@ -69,10 +67,7 @@ namespace DMLmethods.DiakDML
                             kl.options.Add(lOption);
                         }
 
-                        var lValaszok = dbcontext.valaszoks
-                                     .Where(x => x.id_kerdes == k.id_kerdes)
-                                     .Select(x => new { x.id_valaszok, x.id_kerdoiv, x.id_kerdes, x.id_valasz });
-                        foreach (var v in lValaszok)
+                        foreach (var v in lKerdes.valaszoks)
                         {
                             //a megfelelo sorok lekerese a kerdes valaszlehetoeg tablabol
                             var lKerdesValaszlehetoseg = dbcontext.Kerdes_valaszlehetoseg

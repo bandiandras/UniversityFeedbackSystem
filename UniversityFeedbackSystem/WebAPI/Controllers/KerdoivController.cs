@@ -20,12 +20,11 @@ namespace WebAPI.Controllers
         {
             var lParams = paramArray.Split(',');
             
-            var ev = Int32.Parse(lParams[0]);
-            var felev = Int32.Parse(lParams[1]);
-            var neptunId = lParams[2];
+            var felev = Int32.Parse(lParams[0]);
+            var neptunId = lParams[1];
             var kerdoivDML = new KerdoivDML();
 
-            var kerdoiv = kerdoivDML.GetKerdoiv(ev, felev, neptunId);
+            var kerdoiv = kerdoivDML.GetKerdoiv(neptunId, felev);
             return kerdoiv;
         }
 

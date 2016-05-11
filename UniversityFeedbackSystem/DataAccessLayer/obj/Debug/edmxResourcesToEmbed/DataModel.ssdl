@@ -59,6 +59,7 @@
     <Property Name="felev" Type="smallint" />
     <Property Name="ev" Type="smallint" />
     <Property Name="szak" Type="int" />
+    <Property Name="evfolyam" Type="int" />
   </EntityType>
   <EntityType Name="szakok">
     <Key>

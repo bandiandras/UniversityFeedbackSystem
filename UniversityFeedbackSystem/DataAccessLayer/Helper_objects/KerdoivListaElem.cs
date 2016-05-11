@@ -9,7 +9,7 @@ namespace DataAccessLayer.Helper_objects
     public class KerdoivListaElem
     {
         public string question;
-        public List<Options> options;
-        public List<string> answers;
+        public List<Options> options = new List<Options>();
+        public List<string> answers = new List<string>();
     }
 }
