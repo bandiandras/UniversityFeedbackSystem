@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Helper_objects
 {
-    public class ValaszListaElem
+    public class StatisztikaKerdesListaElem
     {
-        public string question;
-        public List<OptionsValasz> options = new List<OptionsValasz>();
+        string question { get; set; }
+        int score { get; set; }
     }
 }

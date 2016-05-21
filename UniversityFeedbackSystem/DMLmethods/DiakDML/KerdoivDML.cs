@@ -96,7 +96,7 @@ namespace DMLmethods.DiakDML
         /// </summary>
         /// <param name="valaszok"></param>
         /// <param name="kerdoivId"></param>
-        public void SaveResults(List<ValaszListaElem> avalaszok, int neptunId)
+        public void SaveResults(List<ValaszListaElem> avalaszok, string neptunId, int felev)
         {
             using (var dbcontext = new ORdbEntities())
             {
@@ -122,11 +122,17 @@ namespace DMLmethods.DiakDML
                     {
                         //megkeresem a kerdes_valaszlehetoseg tablabol a a kerdeshez tartozo bejegyzest
                         var id_kerdes_valaszlehetoseg = dbcontext.Kerdes_valaszlehetoseg.FirstOrDefault(x => x.id_kerdes == aktualisKerdes.id_kerdesek && x.valaszlehetoseg == option.answer).id_Kerdes_valaszlehetoseg;
-                        
-                        //kell kerdoiv id, neptun id alapjan osszeszedni
-                        //Valasz vlsz = new Valasz(valaszId, kerdoivId, aktualisKerdes.id_kerdesek, id_kerdes_valaszlehetoseg);
+
+                        //a diak adatai
+                        var diak = dbcontext.diakoks.FirstOrDefault(x => x.azonosito == neptunId);
+
+                        //megkeressuk a megfelelo kerdoivet
+                        var lKerdoiv = dbcontext.kerdoiveks
+                                        .FirstOrDefault(x => x.felev == felev && x.szak == diak.id_szakok && x.evfolyam == diak.evfolyam);
+
+                        Valasz vlsz = new Valasz(valaszId, lKerdoiv.id_kerdoivek, aktualisKerdes.id_kerdesek, id_kerdes_valaszlehetoseg);
                         //uj sort szurok be a valaszok tablaba
-                        //dbcontext.valaszoks.Add(vlsz);
+                        dbcontext.valaszoks.Add(vlsz);
 
                     }
 

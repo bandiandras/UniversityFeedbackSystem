@@ -35,9 +35,9 @@ namespace WebAPI.Controllers
             var serializer = new JavaScriptSerializer();
             var adat = serializer.Deserialize<dynamic>(kerdoiv.ToString());
 
-            var valaszok = new ValaszLista();
+            var valaszok = new List<ValaszListaElem>();
 
-            valaszok.neptunId = adat[0]["neptunId"];
+            var neptunId = adat[0]["neptunId"];
 
             for (int i = 1; i < adat.Length; ++i)
             {
@@ -51,10 +51,10 @@ namespace WebAPI.Controllers
                     option.answer = adat[i]["options"][j]["answer"];
                     listaElem.options.Add(option);
                 }
-                valaszok.valaszok.Add(listaElem);
+                valaszok.Add(listaElem);
             }
             var kerdoivDML = new KerdoivDML();
-            //kerdoivDML.SaveResults(valaszok, valaszok.neptunId);
+            kerdoivDML.SaveResults(valaszok, neptunId, 1);
         }
 
     }

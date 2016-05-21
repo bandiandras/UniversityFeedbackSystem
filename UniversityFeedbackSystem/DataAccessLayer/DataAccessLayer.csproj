@@ -81,6 +81,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Helper_objects\StatisztikaKerdesListaElem.cs" />
+    <Compile Include="Helper_objects\TanarStatisztika.cs" />
     <Compile Include="Model\Diak.cs" />
     <Compile Include="diakok.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
