@@ -8,17 +8,23 @@ using DataAccessLayer;
 
 namespace DMLmethods.AdminDML
 {
-    class TanarSzures
+    public class TanarSzures
     {
-        public tanarok TanarInfoByNev(string nev)
+        public Tanar TanarInfoByNev(string nev)
         {
-            var retValue = new tanarok();
+            var retValue = new Tanar();
+            var t = new tanarok();
 
             using (var dbcontext = new ORdbEntities())
             {
-                retValue = dbcontext.tanaroks.FirstOrDefault(x => x.nev == nev);
+                t = dbcontext.tanaroks.FirstOrDefault(x => x.nev == nev);
 
             }
+            retValue.id_tanszekek = t.id_tanszekek;
+            retValue.id_tanarok = t.id_tanarok;
+            retValue.nev = t.nev;
+            retValue.tanarok_alias = t.tanarok_alias;
+            retValue.tanszekek = t.tanszekek;
 
             return retValue;
         }
