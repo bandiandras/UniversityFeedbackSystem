@@ -83,6 +83,9 @@
     </Compile>
     <Compile Include="Helper_objects\StatisztikaKerdesListaElem.cs" />
     <Compile Include="Helper_objects\TanarStatisztika.cs" />
+    <Compile Include="Message.cs">
+      <DependentUpon>DataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\Diak.cs" />
     <Compile Include="diakok.cs">
       <DependentUpon>DataModel.tt</DependentUpon>

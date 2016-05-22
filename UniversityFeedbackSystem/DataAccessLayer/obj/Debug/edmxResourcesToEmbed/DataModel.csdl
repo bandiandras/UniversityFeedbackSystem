@@ -102,6 +102,7 @@
     <Property Name="felhasznalo_tipusa" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="tanszekek" Relationship="Self.tanarok_fk" FromRole="tanarok" ToRole="tanszekek" />
     <NavigationProperty Name="x" Relationship="Self.x_fk1" FromRole="tanarok" ToRole="x" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="tanszekek">
     <Key>
@@ -422,5 +423,16 @@
       <End Role="tantargyak" EntitySet="tantargyaks" />
       <End Role="x" EntitySet="x" />
     </AssociationSet>
+    <EntitySet Name="Messages" EntityType="ORdbModel.Message" />
   </EntityContainer>
+  <EntityType Name="Message">
+    <Key>
+      <PropertyRef Name="messageId" />
+    </Key>
+    <Property Name="messageId" Type="Int32" Nullable="false" />
+    <Property Name="tanarId" Type="Int32" Nullable="false" />
+    <Property Name="subject" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="message1" Type="String" Nullable="false" MaxLength="200" FixedLength="true" Unicode="false" />
+    <Property Name="dateTime" Type="DateTime" Precision="3" />
+  </EntityType>
 </Schema>

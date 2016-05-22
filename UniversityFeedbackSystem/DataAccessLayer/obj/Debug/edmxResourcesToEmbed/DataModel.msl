@@ -82,6 +82,7 @@
     <EntitySetMapping Name="tanaroks">
       <EntityTypeMapping TypeName="ORdbModel.tanarok">
         <MappingFragment StoreEntitySet="tanarok">
+          <ScalarProperty Name="email" ColumnName="email" />
           <ScalarProperty Name="nev" ColumnName="nev" />
           <ScalarProperty Name="id_tanarok" ColumnName="id_tanarok" />
           <ScalarProperty Name="tanarok_alias" ColumnName="tanarok_alias" />
@@ -131,6 +132,17 @@
           <ScalarProperty Name="evfolyam" ColumnName="evfolyam" />
           <ScalarProperty Name="felev" ColumnName="felev" />
           <ScalarProperty Name="tantargy_tipus" ColumnName="tantargy_tipus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Messages">
+      <EntityTypeMapping TypeName="ORdbModel.Message">
+        <MappingFragment StoreEntitySet="Messages">
+          <ScalarProperty Name="dateTime" ColumnName="dateTime" />
+          <ScalarProperty Name="message1" ColumnName="message" />
+          <ScalarProperty Name="subject" ColumnName="subject" />
+          <ScalarProperty Name="tanarId" ColumnName="tanarId" />
+          <ScalarProperty Name="messageId" ColumnName="messageId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

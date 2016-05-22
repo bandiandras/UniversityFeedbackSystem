@@ -66,6 +66,16 @@
           <Property Name="szak" Type="int" />
           <Property Name="evfolyam" Type="int" />
         </EntityType>
+        <EntityType Name="Messages">
+          <Key>
+            <PropertyRef Name="messageId" />
+          </Key>
+          <Property Name="messageId" Type="int" Nullable="false" />
+          <Property Name="tanarId" Type="int" Nullable="false" />
+          <Property Name="subject" Type="char" MaxLength="20" />
+          <Property Name="message" Type="char" MaxLength="200" Nullable="false" />
+          <Property Name="dateTime" Type="datetime" />
+        </EntityType>
         <EntityType Name="szakok">
           <Key>
             <PropertyRef Name="id_szakok" />
@@ -86,6 +96,7 @@
           <Property Name="funkcio" Type="varchar" MaxLength="50" />
           <Property Name="id_tanszekek" Type="int" />
           <Property Name="felhasznalo_tipusa" Type="varchar" MaxLength="20" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="tanszekek">
           <Key>
@@ -325,6 +336,7 @@
           <EntitySet Name="kerdesek" EntityType="Self.kerdesek" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="kerdoiv_kerdes" EntityType="Self.kerdoiv_kerdes" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="kerdoivek" EntityType="Self.kerdoivek" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Messages" EntityType="Self.Messages" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="szakok" EntityType="Self.szakok" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tanarok" EntityType="Self.tanarok" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tanszekek" EntityType="Self.tanszekek" Schema="dbo" store:Type="Tables" />
@@ -502,6 +514,7 @@
           <Property Name="felhasznalo_tipusa" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="tanszekek" Relationship="Self.tanarok_fk" FromRole="tanarok" ToRole="tanszekek" />
           <NavigationProperty Name="x" Relationship="Self.x_fk1" FromRole="tanarok" ToRole="x" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="tanszekek">
           <Key>
@@ -822,7 +835,18 @@
             <End Role="tantargyak" EntitySet="tantargyaks" />
             <End Role="x" EntitySet="x" />
           </AssociationSet>
+          <EntitySet Name="Messages" EntityType="ORdbModel.Message" />
         </EntityContainer>
+        <EntityType Name="Message">
+          <Key>
+            <PropertyRef Name="messageId" />
+          </Key>
+          <Property Name="messageId" Type="Int32" Nullable="false" />
+          <Property Name="tanarId" Type="Int32" Nullable="false" />
+          <Property Name="subject" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+          <Property Name="message1" Type="String" Nullable="false" MaxLength="200" FixedLength="true" Unicode="false" />
+          <Property Name="dateTime" Type="DateTime" Precision="3" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -910,6 +934,7 @@
           <EntitySetMapping Name="tanaroks">
             <EntityTypeMapping TypeName="ORdbModel.tanarok">
               <MappingFragment StoreEntitySet="tanarok">
+                <ScalarProperty Name="email" ColumnName="email" />
                 <ScalarProperty Name="nev" ColumnName="nev" />
                 <ScalarProperty Name="id_tanarok" ColumnName="id_tanarok" />
                 <ScalarProperty Name="tanarok_alias" ColumnName="tanarok_alias" />
@@ -959,6 +984,17 @@
                 <ScalarProperty Name="evfolyam" ColumnName="evfolyam" />
                 <ScalarProperty Name="felev" ColumnName="felev" />
                 <ScalarProperty Name="tantargy_tipus" ColumnName="tantargy_tipus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Messages">
+            <EntityTypeMapping TypeName="ORdbModel.Message">
+              <MappingFragment StoreEntitySet="Messages">
+                <ScalarProperty Name="dateTime" ColumnName="dateTime" />
+                <ScalarProperty Name="message1" ColumnName="message" />
+                <ScalarProperty Name="subject" ColumnName="subject" />
+                <ScalarProperty Name="tanarId" ColumnName="tanarId" />
+                <ScalarProperty Name="messageId" ColumnName="messageId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
