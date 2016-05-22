@@ -33,3 +33,15 @@ C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSyste
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\ORdb.mdf
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\ORdb_log.ldf
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
