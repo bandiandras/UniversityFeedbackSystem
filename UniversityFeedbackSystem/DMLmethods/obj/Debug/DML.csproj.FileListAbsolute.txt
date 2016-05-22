@@ -40,3 +40,17 @@ C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSyste
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\obj\Debug\DML.csprojResolveAssemblyReference.cache
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\obj\Debug\DMLmethods.dll
 C:\Users\Bandi\Documents\GitHub\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\obj\Debug\DMLmethods.pdb
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\ORdb.mdf
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\ORdb_log.ldf
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\DMLmethods.dll.config
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\DMLmethods.dll
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\DMLmethods.pdb
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\DataAccessLayer.dll
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\EntityFramework.dll
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\DataAccessLayer.pdb
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\EntityFramework.xml
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\obj\Debug\DML.csprojResolveAssemblyReference.cache
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\obj\Debug\DMLmethods.dll
+C:\Users\balaz\Source\Repos\UniversityFeedbackSystem\UniversityFeedbackSystem\DMLmethods\obj\Debug\DMLmethods.pdb
