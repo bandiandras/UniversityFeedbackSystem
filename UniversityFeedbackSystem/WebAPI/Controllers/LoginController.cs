@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Http;
 using DMLmethods.DiakDML;
+using DMLmethods.TanarDML;
 
 namespace WebAPI.Controllers
 {
@@ -23,5 +24,17 @@ namespace WebAPI.Controllers
                return 0;
            }
        }
+
+       [HttpPost]
+       public string LoginTeacher([FromBody]string userName, [FromBody]string passWord)
+       {
+           var tanar = new Tanar_Login();
+           if (tanar.VerifyTeacherLogin(userName, passWord))
+           {
+               return tanar.GetTeacherFunction(userName);
+           }
+           return "error";
+       }
+
     }
 }
