@@ -34,6 +34,7 @@
         <AssociationConnector Association="ORdbModel.tanarok_fk" ManuallyRouted="false" />
         <AssociationConnector Association="ORdbModel.x_fk1" ManuallyRouted="false" />
         <AssociationConnector Association="ORdbModel.x_fk2" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ORdbModel.Message" Width="1.5" PointX="0.75" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

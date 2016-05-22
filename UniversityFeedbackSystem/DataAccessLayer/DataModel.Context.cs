@@ -38,5 +38,6 @@ namespace DataAccessLayer
         public virtual DbSet<tantargyak> tantargyaks { get; set; }
         public virtual DbSet<valaszok> valaszoks { get; set; }
         public virtual DbSet<x> x { get; set; }
+        public virtual DbSet<Message> Messages { get; set; }
     }
 }

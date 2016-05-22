@@ -26,6 +26,7 @@ namespace DataAccessLayer
         public string funkcio { get; set; }
         public Nullable<int> id_tanszekek { get; set; }
         public string felhasznalo_tipusa { get; set; }
+        public string email { get; set; }
     
         public virtual tanszekek tanszekek { get; set; }
         public virtual ICollection<x> x { get; set; }

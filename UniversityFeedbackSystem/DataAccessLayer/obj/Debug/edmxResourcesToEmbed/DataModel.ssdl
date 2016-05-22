@@ -61,6 +61,16 @@
     <Property Name="szak" Type="int" />
     <Property Name="evfolyam" Type="int" />
   </EntityType>
+  <EntityType Name="Messages">
+    <Key>
+      <PropertyRef Name="messageId" />
+    </Key>
+    <Property Name="messageId" Type="int" Nullable="false" />
+    <Property Name="tanarId" Type="int" Nullable="false" />
+    <Property Name="subject" Type="char" MaxLength="20" />
+    <Property Name="message" Type="char" MaxLength="200" Nullable="false" />
+    <Property Name="dateTime" Type="datetime" />
+  </EntityType>
   <EntityType Name="szakok">
     <Key>
       <PropertyRef Name="id_szakok" />
@@ -81,6 +91,7 @@
     <Property Name="funkcio" Type="varchar" MaxLength="50" />
     <Property Name="id_tanszekek" Type="int" />
     <Property Name="felhasznalo_tipusa" Type="varchar" MaxLength="20" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="tanszekek">
     <Key>
@@ -320,6 +331,7 @@
     <EntitySet Name="kerdesek" EntityType="Self.kerdesek" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="kerdoiv_kerdes" EntityType="Self.kerdoiv_kerdes" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="kerdoivek" EntityType="Self.kerdoivek" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Messages" EntityType="Self.Messages" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="szakok" EntityType="Self.szakok" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tanarok" EntityType="Self.tanarok" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tanszekek" EntityType="Self.tanszekek" Schema="dbo" store:Type="Tables" />
