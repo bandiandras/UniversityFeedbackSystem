@@ -114,6 +114,7 @@
   <ItemGroup>
     <Compile Include="Controllers\KerdoivController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\TanarController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
